@@ -7,15 +7,17 @@ Supported Components
 --------------------
 
 This plugin works with the listed component versions.
-* AirWatch Console v9.0+ 
-* Android v4.0.3
-* iOS v9.0+
+* Workspace ONE UEM console v9.1+ 
+* Android v5.0+
+* iOS 10.0+
 
 Installation
 ------------
 
 To install the plugin, type `cordova plugin add airwatch-sdk-plugin` at the command line. This should be added before any other plugin is added to the app.
-**Note:** The download from NPM, usually takes 2-3 minutes on average, over high speed internet connection.
+**Note:** The download from NPM, usually takes 2-3 minutes on average, over high speed internet connection. While installing the plugin, if below error is encountered, run `npm install q glob ` .
+
+*Failed to install ‘airwatch-sdk-plugin’: Error: Cannot find module ‘q’*
 
 Initialization
 --------------
@@ -111,7 +113,6 @@ Status code | Network state
 :----------:|:-------------
  -2         | initializing
  -1         | normal
-  0         | bad SSID
   1         | cellular data disabled
   2         | roaming
   3         | proxy failed
@@ -145,4 +146,13 @@ function sdkEventCallback(event, info)
 
 AirWatch SDK Documentation
 --------------------------
-For further details about the AirWatch SDK, navigate to <https://my.air-watch.com/help/9.1/en/Content/ReleaseNotes/DocList_PDFs.htm> and search for **AirWatch SDK Technical Implementation Guides** in the Application Management section.
+For further details about the AirWatch SDK, navigate to <https://my.workspaceone.com/products/Workspace-ONE-SDK> and select the required platform, SDK version and Workspace ONE UEM console version.
+
+
+Open Source Link
+--------------------------
+<https://www.air-watch.com/downloads/open_source_license_AirWatch_SDK_Cordova_Plugin_1.4_GA.txt>
+
+Questions and Feedback
+----------------------
+For any questions/feedback or to report an issue, please reach out to VMware support teams at <https://secure.workspaceone.com/login>
